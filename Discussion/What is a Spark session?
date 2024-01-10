@@ -1,0 +1,19 @@
+What is a spark session?
+========================
+
+It is the entry point to programming Spark with the Dataset and DataFrame API.
+
+Create a spark session
+----------------------
+spark = SparkSession.builder.appName("myApp").getOrCreate()
+
+Builder pattern is used to create the spark session.
+
+
+# The version of Spark on which this application is running.
+spark.version
+'3.1.2'
+
+
+
+
