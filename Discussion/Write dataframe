@@ -1,0 +1,6 @@
+Write dataframe as Parquet file
+==============================
+
+df.write \
+.format("parquet") \
+.save("df_parquet")
