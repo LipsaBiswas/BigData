@@ -1,0 +1,17 @@
+Spark dataframe and dataset
+=============================
+Both DataFrames and Datasets are distributed collections of data with built-in optimizations for distributed processing.
+
+DataFrames are more user-friendly and are suitable for users familiar with SQL and those who don't need the extra type safety provided by Datasets.
+
+Datasets are recommended when strong typing and compile-time safety are essential, especially in applications like machine learning.
+
+In summary, while DataFrames are widely used for simplicity and ease of use,
+Datasets are preferred when stronger typing and performance optimizations are critical for specific use cases.
+The choice between them depends on the requirements and complexity of your Spark application.
+
+
+
+
+
+
