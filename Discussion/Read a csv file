@@ -1,0 +1,13 @@
+Read a csv file
+==================
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
+spark = SparkSession.builder.appName("myapp").getOrCreate()
+
+df =  spark.read \
+.format("csv") \
+.option("header" , "true") \
+.option("inferschema" , "true") \
+.load("crime_detection/Major_Crime_Indicators_Open_Data.csv")
