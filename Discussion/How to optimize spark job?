@@ -1,0 +1,24 @@
+How to optimize spark job?
+===========================
+
+Here are 10 ways you can optimize your spark job!
+
+1. Filter irrelevant data as early as possible
+
+2. make sure broadcast hash join strategy comes in play when joining one large and one small table. Tune parameters if required.
+
+3. Make sure hash aggregate is used instead of sort aggregate when doing aggregations on a column with not too many distinct keys.
+
+4. AQE can help with eliminating problems with partition skew
+
+5. Change the physical layout of data - consider partitioning your data on a column with not too many distinct keys.
+
+6. if you are joining 2 large tables and you have to do it repeatedly, then consider bucketing both the tables on the join key. Make sure to have same number of buckets, this will help you avoid shuffling.
+
+7. Try caching/persisting as and when required. this helps you to avoid going back to disk again and again.
+
+8. Try tuning the number of shuffle partitions. this will help you to control the parallelism after a wide transformation.
+
+9. Try using efficient file formats and compression techniques. 
+
+10. Most of the above techniques work in a way that you try to avoid or minimize shuffling.
