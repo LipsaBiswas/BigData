@@ -1,0 +1,15 @@
+1. Run on Databricks cloud
+ Sign up a account at: https://community.cloud.databricks.com/login.html
+
+
+2. ITVERSITY like labs which is built on Hadoop clusters with a Jupyter based environment
+https://labs.itversity.com/
+(You have to pay a nominal fee to use the lab)
+
+3. Google colab notebook
+Link to a starter notebook - https://colab.research.google.com/drive/1gxTZo_ns2R99VzIfb5xGsuRbBQjs9rgt?usp=sharing
+
+ Nirmal Budhathoki 
+
+4. Install Apache Spark on your system 
+You can follow official documentation or youTube videos for the same
