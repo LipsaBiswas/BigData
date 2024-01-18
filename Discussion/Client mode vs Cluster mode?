@@ -1,0 +1,26 @@
+Client mode vs Cluster mode?
+==================================
+In Apache Spark, "client mode" and "cluster mode" refer to different deployment modes used for running Spark applications.
+
+                          Client mode                               Cluster mode
+                         ============                               ===============
+
+Driver location    The Spark driver runs on the machine             The Spark driver runs within the cluster on one of the allocated worker nodes
+===============    where the Spark application 
+                   is submitted
+
+
+Communication      The client machine communicates directly         The client machine submits the Spark application to the cluster manager,                                                              
+=============      with the cluster's resource manager              (e.g., which launches the driver within the cluster. 
+                   YARN, Mesos, or standalone) to request           The client machine is no longer involved in driver execution after submission.
+                  resources and submit the Spark application.
+
+Use case           Typically used for development, testing,          Used in production environments where the driver requires cluster resources. 
+=======            and debugging.                                    It ensures better fault tolerance and scalability
+
+
+Advantages        Easier for debugging and monitoring                Better suited for production environments with resource isolation and fault tolerance.
+===========       Interactive development and testing                The driver is less vulnerable to client machine failures.
+                  are simplified.
+
+=
