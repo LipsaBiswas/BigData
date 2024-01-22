@@ -1,0 +1,20 @@
+What is broadcast variable?
+==================================
+Broadcast variables allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks
+
+--------------------------------------------------------------------------
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
+spark = SparkSession.builder.appName("myapp").getOrCreate()
+
+df = spark.read.format("csv") \
+.option("header" , "true") \
+.load("/public/crime/csv/crime_data.csv")
+
+filter_list = ['THEFT' , 'BATTERY']
+
+# Broadcast the small list
+broadcast_values = spark.sparkContext.broadcast(filter_list)
+
+df.filter(df["Primary Type"].isin(broadcast_values.value))
