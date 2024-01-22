@@ -1,6 +1,10 @@
 What is broadcast variable?
 ==================================
-Broadcast variables allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks
+Broadcast variables allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks.
+Broadcast variables:
+=> read-only
+=> should fit into memory in a single machine
+=> distributed to cluster
 
 --------------------------------------------------------------------------
 from pyspark.sql import SparkSession
