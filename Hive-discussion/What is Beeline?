@@ -1,0 +1,16 @@
+What is Beeline?
+===============
+
+Hive comes with Hiverserver2 which is a server interface and has its own command line interface (CLI) known as Beeline.
+
+* Beeline is used to connect to Hive and run HiveQL queries
+
+* Beeline is a JDBC client
+
+Using Beeline to Connect to Remote Hive
+========================================
+!connect jdbc:hive2://m02.itversity.com:10000/;auth=noSasl
+
+You will replace m02.itversity.com with your remote server
+By default, HiveServer2 runs on port 10000.
+
