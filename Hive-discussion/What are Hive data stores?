@@ -1,0 +1,14 @@
+What are Hive data stores?
+=============================
+1.Hive Metastore
+2.Hive Data warehouse Location (Where Actual table data stored)
+
+Hive Metastore is used to store the metadata about the database and tables and by default, it uses the Derby database; You can change this to any RDBMS database like MySQL and Postgress e.t.c
+
+By default the metastore database name is metastore_db.
+
+Where Do Hive Stores Tables in HDFS?
+=========================================
+Hive stores tables files by default at /user/hive/warehouse location on HDFS file system. You need to create these directories on HDFS before you use Hive.
+
+
