@@ -6,7 +6,15 @@ There are tow types of tables in Hive:
 
 Managed tables
 ===============
+* By default, Hive creates managed or internal tables
+* Hive manages both data and metadata of the managed table
+* Dropping the table drops the metadata from metastore and the files from HDFS
 
 
 External tables
 ================
+* While creating table, using the optional keyword EXTERNAL , external tables are created
+* Hive manages the table metadat but not the underlying files
+* Dropping an external table drops just metadata from Metastore , does not delete data from HDFS
+
+
