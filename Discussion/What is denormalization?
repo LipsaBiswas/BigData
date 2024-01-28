@@ -1,0 +1,6 @@
+What is denormalization?
+=============================
+
+In data denormaliztion,  redundant columns are added to some dimension tables to make querying and working with the data faster and easier.
+The purpose is to trade some redundancy (duplication of data) in the data model for increased query speed, by avoiding computationally expensive join operations.
+
