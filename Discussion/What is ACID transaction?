@@ -1,0 +1,14 @@
+What is ACID transaction?
+=========================
+
+Transactionan
+------------
+In the context of of databases and data storage systems, a transaction is any operation that is treated as a single unit of work,
+which either completes fully or does not complete at all, and leaves the storage system in a consistent state.
+
+ACID is an acronym that refers to the set of 4 key properties that define a transaction: Atomicity, Consistency, Isolation, and Durability
+
+ACID transactions guarantee that each read, write, or modification of a table has Atomicity, Consistency, Isolation, and Durability
+
+ACID transactions ensure the highest possible data reliability and integrity. They ensure that your data never falls into an inconsistent 
+state because of an operation that only partially completes
