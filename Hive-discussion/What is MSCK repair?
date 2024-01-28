@@ -1,0 +1,6 @@
+What is MSCK repair?
+===================
+The MSCK REPAIR TABLE command stands for "metastore check repair" and is used to synchronize the Hive metastore with the actual data stored
+in the external storage system.
+
+MSCK REPAIR TABLE your_table_name;
