@@ -1,0 +1,15 @@
+CSV vs Parquet file format
+===========================
+Speed - Apache parquet is column-based file format whereas CSV is row-based file format. As parquet is a column-based file format , 
+aggregation queries and skipping non-relevant data while querying is less time consuming compared to CSV which is row-based. 
+Parquet is approx. 34X faster than CSV.
+
+Storage -Parque supports many flexible compression options and efficient encoding schemes. Hence, parque takes much less storage compared to CSV.
+Parquet takes almost 87% less storage than CSV.
+
+Cost - Amazon Athena like service charge based on the amount of data scanned per query, Amazon charges according to the amount of data stored S3,
+Google dataproc charges are time-based . Hence, based on the file size, data scanned per query, time taken to query, we are charged by service providers.
+When using parquet cost involved is much less compared to CSV based on the storage-querytime-data scanned amount. 
+While using Parquet , approx. 99% less data scanned
+
+⛳ Overall saving : While using Parquet compared to CSV , overall cost saving is apprx. 99.7%
