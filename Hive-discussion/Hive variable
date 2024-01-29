@@ -1,1 +1,21 @@
+Hive variable
+================
+Hive variables are key-value pairs that can be set using the set command and they can be used in scripts and Hive SQL. 
+The values of the variables in Hive scripts are substituted during the query construct.
+
+hive> SET hivevar:table1=emp;
+hive> SET hivevar:table1;
+hivevar:table1=emp
+hive> SELECT * FROM ${hivevar:table1};
+OK
+Time taken: 45.78 seconds
+hive> 
+
+
+Hive stores variables in four different namespaces, namespace is a way to separate variables.
+1. hiveconf  (config variables)
+2. hivevar  (custom variables)
+3. system   (system variables)
+4. env      (environment variables)
+
 
