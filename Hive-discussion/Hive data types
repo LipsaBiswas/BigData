@@ -1,0 +1,13 @@
+Hive data types
+=================
+Hive has following data types:
+
+1. Numeric types (TINYINT, SMALLINT, INTEGER, BIGINT, FLOAT, DOUBLE, DOUBLE PRECISIO , DECIMAL,NUMERIC)
+2. Date and time types (TIMESTAMP , DATE, INTERVAL)
+3. String types (STRING , VARCHAR, CHAR)
+4. Misc type (BOOLEAN ,BINARY)
+5. Complex types (Arrays , Maps , Structs, Union)
+
+Array is used to store the list of elements. Map is used to store key/value pair. Struct is for parent and child assosiations.
+
+
