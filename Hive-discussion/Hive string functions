@@ -1,0 +1,18 @@
+Hive string functions
+=========================
+
+
+1.         ascii       Returns ASCII numeric value of the first character of the input argument.       SELECT ascii("A");>> 65
+2.         base64      Used to convert the binary input argument to base64 string.
+3. character_length                                                                                    select character_length("ABC"); >>  3
+4.                                                                                                     select concat("ABC","DEF"); >> ABCDEF
+5.                                                                                                     select concat_ws("|","1","2","3"); >>  1|2|3
+6. select format_number(1234567,3); ==> Returns 1,234,567.000
+7. select length("123456789"); ==> Returns 9
+8. SELECT locate('hive' , 'i like hive very much'); ==> 8
+9. select lower("UNITEDSTATES"); ==> unitedstates
+10. select lcase("UNITEDSTATES"); ==> unitedstates
+11. select ltrim("    UNITEDSTATES"); ==> UNITEDSTATES
+12. select printf('%S UNITED %d','USA',45); ==> USA UNITED 45
+13. 
+
