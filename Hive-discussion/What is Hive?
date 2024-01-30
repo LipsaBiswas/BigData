@@ -2,5 +2,5 @@ What is Hive?
 =================
 The Apache Hive is an open source , distributed, fault tolerant data warehouse (DWH).
 
-It enables analytics at a massive sclae and facilitates querying petabyte scale data residing in distributed storage system.
+It enables analytics at a massive scale and facilitates querying petabyte scale data residing in distributed storage system.
 
