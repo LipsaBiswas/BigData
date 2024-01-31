@@ -1,0 +1,41 @@
+1. Transactional system vs. Analytical system
+2. What are Hive metastore , and Hive data location ?
+3. How to change the default metastore storage ?
+4. Why metadata(metastore) is in database and not in file system?
+5. Where exactly metastore located?
+6. What are different execute engines?
+7. Explain the Hive architecture
+8. Database Vs. Datawarehouse
+9. What is schema on write
+10. SQL vs HQL
+11. What are the limitations of using Join, subqueries in Hive?
+12. UDF , UDTF , UDAF
+13. UNION vs UNIONALL
+14. What is normalization?
+15. What is denormalization?
+16. Managed table vs. external table
+17. What is Fetch task?
+18. What are different ways to isert data into Hive tables?
+19. Use of optional keyword 'LOCAL' while using LOAD INPATH
+20. Discuss about replication impact while using or not using LOCAL path for data insert
+21. What is indexing ? What are different types of indexing?
+22. EXPLODE function
+23. How to remove null values present in an external table?
+24. Partitioning vs Bucketing
+25. What are types of partitioning , static partitioning vs dynamic partitioning
+26. When to use bucketing and when to use partitioning?
+27. You have a small set of data, will you do bucketing or partitioning ? Explain
+28. What is hash function?
+29. What is hash function collision ?
+30. How to enable dynamic partitioning?
+31. Bucket join vs SMB Join
+32. Explain  - Order by , sort by , distribute by
+33. Row based vs Column based file format
+34. Avro vs Parquet Vs ORC
+35. What is schema evolution?
+36. What is predicate pushdown?
+37. Serialization Vs Deserialization
+38. What is agnostic compression?
+39. What is vectorization?
+40. How to do metastore repair?
+41. What is SCD , what are diff types of SCD
