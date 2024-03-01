@@ -1,0 +1,22 @@
+AQE - Adaptive Query Execution
+===============================
+AQE is an important and advanced concept in Spark optimization tuning.
+It is query re-optimization that occurs during query execution.
+
+The motivation for runtime re-optimization is that Databricks has the most up-to-date accurate statistics at the end of a shuffle 
+and broadcast exchange (referred to as a query stage in AQE).
+
+Spark 1.x – Introduced Catalyst Optimizer and Tungsten Execution Engine
+Spark 2.x – Added Cost-Based Optimizer 
+Spark 3.0 – Now added Adaptive Query Execution
+
+Syntax
+======
+spark.databricks.optimizer.adaptive.enabled
+spark.conf.set("spark.sql.adaptive.enabled",true)
+
+AQE features
+=============
+1. Dynamically coalescing shuffle partition
+2. Dynamically switching join startegies
+3. Dynamically optimizing skew joins
