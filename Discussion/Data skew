@@ -1,0 +1,12 @@
+What is data skew or partition skew?
+==========================================
+It occurs when one of the partitions hold more data compared to other partitions.
+Data skew can severly downgrade the performance of the queries, especially those with joins.
+Joins between tables involve shufflingof daat, and skew can imbalance the load on the workers in the cluster
+
+How to handle data skew?
+=======================
+1. Salt the skewed column
+2. Enable AQE
+3. Apply skew hint
+4. Use broadcast join
