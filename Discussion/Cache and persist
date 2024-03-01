@@ -1,0 +1,6 @@
+What is caching?
+==================
+Caching is a technique used in computing to store and quickly retrieve previously accessed or computed data.
+
+Spark is doing in-memory computation, then whats the need for caching?
+==========================================================================
