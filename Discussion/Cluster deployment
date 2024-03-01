@@ -1,0 +1,14 @@
+What is a cluster in databricks?
+==============================
+Cluster is a computing infrastructure in Databricks environment.
+It  is a set of VMs
+
+To execute any code in Databricks, we need to create cluster and attach that to notebook
+
+What are different types of clusters?
+-------------------------------------
+1. All purpose or interactive - 
+   Mostly used for development purpose
+   We can manually start and stop the cluster
+  
+2. Job cluster
