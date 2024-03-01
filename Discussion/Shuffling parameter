@@ -1,0 +1,25 @@
+shuffling parameter
+=========================
+
+What is shuffle?
+================
+Shuffle is moving data or transfering data across  nodes
+
+What is shuffling parameter?
+=========================
+It decides the no. of partitions to be created during the shuffling operation
+200 is the default value but it is configurable
+spark.conf.get("spark.sql.shuffle.partitions")
+
+How to decide on shuffling parameter?
+======================================
+Its a trail and error approach. The no depends on ypur use case, dataset , no. of cores, amount of executor memory
+
+What factors to consider while choosing the shuffling parameter?
+====================================================================
+- For smaller data set, 200 partitions would split the into much smaller chunks which adds disk and network overhead
+
+- For larger dataset , 200 partitions would create bigger chunks of data which leads to poor parallelism
+
+- Make sure the partition size would be at least 128 MB to 200 MB
+- Make sure number of partitions are multiple of no. of cores
